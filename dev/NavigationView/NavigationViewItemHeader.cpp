@@ -8,7 +8,7 @@
 
 #include "NavigationViewItemHeader.properties.cpp"
 
-static constexpr auto c_rootGrid = L"InnerHeaderGrid"sv;
+static constexpr auto c_rootGrid = L"NavigationViewItemHeaderRootGrid"sv;
 
 NavigationViewItemHeader::NavigationViewItemHeader()
 {

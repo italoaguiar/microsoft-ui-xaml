@@ -648,7 +648,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="local:NavigationViewItemHeader">
-                    <Grid>
+                    <Grid x:Name="NavigationViewItemHeaderRootGrid">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="PaneStates">
                                 <VisualStateGroup.Transitions>
