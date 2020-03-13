@@ -4294,7 +4294,7 @@ namespace Windows.UI.Xaml.Tests.MUXControls.InteractionTests
 
                 item = FindElement.ByName("Menu Item 7 (Selectable)");
                 InputHelper.LeftClick(item);
-                Wait.ForIdle()
+                Wait.ForIdle();
 
                 Verify.IsNotNull(FindElement.ById("ChildrenFlyout"), "Flyout should still be open.");
 
