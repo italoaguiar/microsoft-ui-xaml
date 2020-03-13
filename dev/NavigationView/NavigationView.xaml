@@ -726,7 +726,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Grid>
+                    <Grid x:Name="NavigationViewItemSeparatorRootGrid">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="NavigationSeparatorLineStates">
                                 <VisualState x:Name="HorizontalLine" />
