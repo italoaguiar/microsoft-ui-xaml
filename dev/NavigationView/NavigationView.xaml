@@ -282,7 +282,9 @@
                                         Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.OverflowButtonVisibility}">
 
                                         <Button.Flyout>
-                                            <Flyout Placement="BottomEdgeAlignedRight" ElementSoundMode="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ElementSoundMode}">
+                                            <Flyout
+                                                Placement="Bottom"
+                                                ElementSoundMode="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ElementSoundMode}">
                                                 <Flyout.FlyoutPresenterStyle>
                                                     <Style TargetType="FlyoutPresenter">
                                                         <Setter Property="Padding" Value="0,8" />
@@ -548,13 +550,13 @@
                                 <VisualState x:Name="OnTopNavigationPrimary">
                                     <VisualState.Setters>
                                         <Setter Target="NavigationViewItemPresenter.Style" Value="{StaticResource MUX_NavigationViewItemPresenterStyleWhenOnTopPane}" />
-                                        <Setter Target="ChildrenFlyout.Placement" Value="BottomEdgeAlignedLeft"/>
+                                        <Setter Target="ChildrenFlyout.Placement" Value="Bottom"/>
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="OnTopNavigationPrimaryReveal">
                                     <VisualState.Setters>
                                         <Setter Target="NavigationViewItemPresenter.Style" Value="{StaticResource MUX_NavigationViewItemPresenterStyleWhenOnTopPaneWithRevealFocus}" />
-                                        <Setter Target="ChildrenFlyout.Placement" Value="BottomEdgeAlignedLeft"/>
+                                        <Setter Target="ChildrenFlyout.Placement" Value="Bottom"/>
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="OnTopNavigationOverflow">
@@ -596,7 +598,8 @@
                             </local:ItemsRepeater.Layout>
                         </local:ItemsRepeater>
                         <FlyoutBase.AttachedFlyout>
-                            <Flyout x:Name="ChildrenFlyout" Placement="RightEdgeAlignedTop">
+                            <Flyout x:Name="ChildrenFlyout"
+                                    Placement="Right">
                                 <Flyout.FlyoutPresenterStyle>
                                     <Style TargetType="FlyoutPresenter">
                                         <Setter Property="Padding" Value="0,8" />
